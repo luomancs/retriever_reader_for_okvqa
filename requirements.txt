@@ -1,0 +1,16 @@
+transformers==4.2.2
+numpy==1.19.2
+hydra_core==1.0.6
+jsonlines==2.0.0
+omegaconf==2.0.6
+faiss_cpu==1.7.0
+regex==2021.3.17
+torch==1.7.1
+spacy==3.0.1
+tqdm==4.59.0
+apex==0.9.10dev
+fairseq==0.10.2
+faiss==1.5.3
+hydra==2.5
+pytext==1.0
+wget==3.2

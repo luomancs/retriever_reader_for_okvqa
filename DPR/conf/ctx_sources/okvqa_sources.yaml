@@ -1,0 +1,21 @@
+# @package _group_
+
+okvqa_train_corpus:
+  _target_: dpr.data.okvqa_data.CsvCtxSrc
+  file: data/corpus/okvqa_train_corpus.csv
+  id_prefix: 'google:'
+  
+okvqa_full_corpus:
+  _target_: dpr.data.okvqa_data.CsvCtxSrc
+  file: data/corpus/okvqa_full_corpus.csv
+  id_prefix: 'google:'
+  
+okvqa_train_clean_corpus:
+  _target_: dpr.data.okvqa_data.CsvCtxSrc
+  file: data/corpus/okvqa_train_clean_corpus.csv
+  id_prefix: 'google:'
+  
+okvqa_full_clean_corpus:
+  _target_: dpr.data.okvqa_data.CsvCtxSrc
+  file: data/corpus/okvqa_full_clean_corpus.csv
+  id_prefix: 'google:'

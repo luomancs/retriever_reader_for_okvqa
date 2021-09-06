@@ -1,0 +1,13 @@
+# @package _group_
+
+okvqa_train:
+  _target_: dpr.data.okvqa_data.JsonQADataset
+  file: data/training_data/retriever_train.json
+
+okvqa_testdev:
+  _target_: dpr.data.okvqa_data.JsonQADataset
+  file: data/training_data/retriever_train.json/retriever_testdev.json
+  
+okvqa_test:
+  _target_: dpr.data.okvqa_data.JsonQADataset
+  file: data/testing_data/retriever_test.json 

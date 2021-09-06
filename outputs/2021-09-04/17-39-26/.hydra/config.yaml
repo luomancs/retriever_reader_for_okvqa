@@ -1,0 +1,52 @@
+model_file: /home/mluo26/retriever_reader_for_okvqa/pretrained_model/retriever/image_dpr_biencoder
+ctx_src: okvqa_full_clean_corpus
+encoder_type: ctx
+out_file: /home/mluo26/retriever_reader_for_okvqa/indexing/caption_dpr_full_clean/
+do_lower_case: true
+shard_id: 0
+num_shards: 1
+batch_size: 128
+tables_as_passages: false
+special_tokens: null
+tables_chunk_sz: 100
+tables_split_type: type1
+local_rank: -1
+device: null
+distributed_world_size: null
+distributed_port: null
+no_cuda: false
+n_gpu: null
+fp16: false
+fp16_opt_level: O1
+encoder:
+  encoder_model_type: hf_bert
+  question_encoder_model_type: hf_bert
+  ctx_encoder_model_type: hf_bert
+  question_pretrained_model_cfg: bert-base-uncased
+  ctx_pretrained_model_cfg: bert-base-uncased
+  pretrained_model_cfg: bert-base-uncased
+  pretrained_file: null
+  projection_dim: 0
+  question_sequence_length: 128
+  ctx_sequence_length: 256
+  sequence_length: 256
+  dropout: 0.1
+  fix_ctx_encoder: false
+  pretrained: true
+ctx_sources:
+  okvqa_train_corpus:
+    _target_: dpr.data.okvqa_data.CsvCtxSrc
+    file: data/corpus/okvqa_train_corpus.csv
+    id_prefix: 'google:'
+  okvqa_full_corpus:
+    _target_: dpr.data.okvqa_data.CsvCtxSrc
+    file: data/corpus/okvqa_full_corpus.csv
+    id_prefix: 'google:'
+  okvqa_train_clean_corpus:
+    _target_: dpr.data.okvqa_data.CsvCtxSrc
+    file: data/corpus/okvqa_train_clean_corpus.csv
+    id_prefix: 'google:'
+  okvqa_full_clean_corpus:
+    _target_: dpr.data.okvqa_data.CsvCtxSrc
+    file: data/corpus/okvqa_full_clean_corpus.csv
+    id_prefix: 'google:'
