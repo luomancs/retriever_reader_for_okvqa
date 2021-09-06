@@ -1,5 +1,0 @@
-- model_file=/home/mluo26/retriever_reader_for_okvqa/pretrained_model/retriever/image_dpr_biencoder
-- ctx_src=okvqa_train_clean_corpus
-- shard_id=0
-- num_shards=1
-- out_file=/home/mluo26/retriever_reader_for_okvqa/indexing/image_dpr_biencoder
