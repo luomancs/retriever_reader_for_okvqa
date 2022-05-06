@@ -45,9 +45,9 @@ Training data: you need to prepare data for either retriever or reader training.
 ### Petrained models
 Caption-DPR and extractive reader can be downloaded from [here](https://drive.google.com/drive/folders/1JAXnKNSqUqj1wXPv11tlJYeeOdTrFfBe?usp=sharing)
 
-## Retriever training
+<!-- ## Retriever training
 
-Coming soon
+Coming soon -->
 
 ## Retriever inference
 
@@ -98,9 +98,9 @@ python DPR/image_dense_retriever.py \
 ```
 
 
-## EReader model training
+<!-- ## EReader model training
 
-Comming soon
+Comming soon -->
 
 ## EReader model inference
 
@@ -112,16 +112,23 @@ python evaluation/predict_answer.py \
 --cuda_id 0 {-1 if evaluate on cpu}\
 ```
 
-## CReader model training
+<!-- ## CReader model training
 
 Comming soon
 
 ## CReader model inference
 
-Comming soon
+Comming soon -->
 
 ## Citation
 If you find this paper or this code useful, please cite this paper:
 
 ```
+@inproceedings{luo2021weakly,
+  title={Weakly-Supervised Visual-Retriever-Reader for Knowledge-based Question Answering},
+  author={Luo, Man and Zeng, Yankai and Banerjee, Pratyay and Baral, Chitta},
+  booktitle={Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
+  pages={6417--6431},
+  year={2021}
+}
 ```
